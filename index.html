@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Vantagens</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <label for="valorComVantagem">Valor do produto com vantagens:</label>
+  <input type="number" id="valorComVantagem" placeholder="Insira o valor">
+  
+  <label for="valorSemVantagem">Valor do produto sem vantagem:</label>
+  <input type="number" id="valorSemVantagem" placeholder="Insira o valor">
+
+  <label for="milhasPorReal">Milhas por real:</label>
+  <input type="number" id="milhasPorReal" placeholder="Quantidade de milhas por real" step="0.01">
+
+  <label for="tipoPrograma">Tipo de programa:</label>
+<select id="tipoPrograma">
+  <option value="livelo">LIVELO</option>
+  <option value="esfera">ESFERA</option>
+  <option value="smiles">SMILES</option>
+  <option value="latam">LATAM</option>
+</select>
+
+  
+  
+  <button onclick="calcular()">Calcular o melhor</button>
+</div>
+<div id="resultadoModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="resultadoTexto"></p>
+    </div>
+  </div>
+  
+
+<script src="script.js"></script>
+</body>
+</html>
